@@ -1,0 +1,14 @@
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\bin\Release\netcoreapp2.2\MDP.deps.json
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\bin\Release\netcoreapp2.2\MDP.runtimeconfig.json
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\bin\Release\netcoreapp2.2\MDP.runtimeconfig.dev.json
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\bin\Release\netcoreapp2.2\MDP.dll
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\bin\Release\netcoreapp2.2\MDP.pdb
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.csprojAssemblyReference.cache
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.RazorAssemblyInfo.cache
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.RazorAssemblyInfo.cs
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.AssemblyInfoInputs.cache
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.AssemblyInfo.cs
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.RazorTargetAssemblyInfo.cache
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.dll
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.pdb
