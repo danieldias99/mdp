@@ -12,3 +12,17 @@ C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\
 C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.RazorTargetAssemblyInfo.cache
 C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.dll
 C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Release\netcoreapp2.2\MDP.pdb
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\bin\Release\netcoreapp2.2\MDP.deps.json
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\bin\Release\netcoreapp2.2\MDP.runtimeconfig.json
+C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\bin\Release\netcoreapp2.2\MDP.runtimeconfig.dev.json
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\bin\Release\netcoreapp2.2\MDP.dll
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\bin\Release\netcoreapp2.2\MDP.pdb
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\obj\Release\netcoreapp2.2\MDP.csprojAssemblyReference.cache
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\obj\Release\netcoreapp2.2\MDP.csproj.CoreCompileInputs.cache
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\obj\Release\netcoreapp2.2\MDP.RazorAssemblyInfo.cache
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\obj\Release\netcoreapp2.2\MDP.RazorAssemblyInfo.cs
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\obj\Release\netcoreapp2.2\MDP.AssemblyInfoInputs.cache
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\obj\Release\netcoreapp2.2\MDP.AssemblyInfo.cs
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\obj\Release\netcoreapp2.2\MDP.RazorTargetAssemblyInfo.cache
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\obj\Release\netcoreapp2.2\MDP.dll
+c:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\obj\Release\netcoreapp2.2\MDP.pdb
