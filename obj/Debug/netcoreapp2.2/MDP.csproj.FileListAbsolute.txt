@@ -28,17 +28,3 @@ C:/Users/Daniel/Desktop/Universidade/3oAno/1oSemestre/LAPR5/Projeto/lei19-20_3DD
 /Users/goncalo/Documents/eP1cK/College/3ano/lapr5/lei19-20_s5_3dd_019/Solution/MDP/obj/Debug/netcoreapp2.2/MDP.RazorTargetAssemblyInfo.cache
 /Users/goncalo/Documents/eP1cK/College/3ano/lapr5/lei19-20_s5_3dd_019/Solution/MDP/obj/Debug/netcoreapp2.2/MDP.dll
 /Users/goncalo/Documents/eP1cK/College/3ano/lapr5/lei19-20_s5_3dd_019/Solution/MDP/obj/Debug/netcoreapp2.2/MDP.pdb
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\bin\Debug\netcoreapp2.2\MDP.deps.json
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\bin\Debug\netcoreapp2.2\MDP.runtimeconfig.json
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\bin\Debug\netcoreapp2.2\MDP.runtimeconfig.dev.json
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\bin\Debug\netcoreapp2.2\MDP.dll
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\bin\Debug\netcoreapp2.2\MDP.pdb
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Debug\netcoreapp2.2\MDP.csprojAssemblyReference.cache
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Debug\netcoreapp2.2\MDP.csproj.CoreCompileInputs.cache
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Debug\netcoreapp2.2\MDP.RazorAssemblyInfo.cache
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Debug\netcoreapp2.2\MDP.RazorAssemblyInfo.cs
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Debug\netcoreapp2.2\MDP.AssemblyInfoInputs.cache
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Debug\netcoreapp2.2\MDP.AssemblyInfo.cs
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Debug\netcoreapp2.2\MDP.RazorTargetAssemblyInfo.cache
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Debug\netcoreapp2.2\MDP.dll
-C:\Users\Daniel\Desktop\Universidade\3oAno\1oSemestre\ARQSI\Projeto\MDP\MDP\obj\Debug\netcoreapp2.2\MDP.pdb
