@@ -29,7 +29,8 @@ namespace MDP
         public void ConfigureServices(IServiceCollection services)
         {
             //services.AddDbContext<MDPContext>(opt => opt.UseSqlServer("Server=localhost\\LAPR5_3DD_019;Database=ME;Trusted_Connection=True;"));
-            services.AddDbContext<MDPContext>(opt => opt.UseSqlServer("Server=tcp:bd-lapr5.database.windows.net,1433;Initial Catalog=lapr5;Persist Security Info=False;User ID=administrador;Password=lapr5-19;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
+            services.AddDbContext<MDPContext>(opt => opt.UseSqlServer("Server=tcp:lapr5-019.database.windows.net,1433;Initial Catalog=lapr5;Persist Security Info=False;User ID=admin019;Password=lapr5-019;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"));
+
 
             //services.AddDbContext<LAPR5DBContext>(opt => opt.UseInMemoryDatabase("todoList"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
