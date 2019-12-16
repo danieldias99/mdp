@@ -7,10 +7,15 @@ namespace MDP.Models.DTO
     {
 
         public long Id { get; set; }
+        public OrdemFabrico [] operacoes {get; set;}
 
-        public PlanoFabricoDTO(long Id)
+        public long Id_Produto {get;set;}
+
+        public PlanoFabricoDTO(long Id, long Id_produto, OrdemFabrico [] operacoes)
         {
             this.Id = Id;
+            this.Id_Produto = Id_Produto;
+            this.operacoes = operacoes;  
         }
 
 

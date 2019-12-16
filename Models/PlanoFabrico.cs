@@ -7,10 +7,12 @@ namespace MDP.Models
     {
 
         public long Id { get; set; }
+        public OrdemFabrico [] operacoes {get; set;}
+        public long Id_Produto;
 
         public PlanoFabricoDTO toDTO()
         {
-            return new PlanoFabricoDTO(Id);
+            return new PlanoFabricoDTO(Id, Id_Produto, operacoes);
         }
 
     }

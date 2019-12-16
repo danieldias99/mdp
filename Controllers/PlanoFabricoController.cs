@@ -36,7 +36,7 @@ namespace MDB.Controllers
         public async Task<ActionResult<PlanoFabrico>> PostPlanoFabrico(PlanoFabrico newPlanoFabrico)
         {
             repositorio.addPlanoFabrico(newPlanoFabrico);
-            return CreatedAtAction(nameof(GetPlanoFabrico), new { id = newPlanoFabrico.Id }, newPlanoFabrico);
+            return CreatedAtAction(nameof(GetPlanoFabrico), new { id = newPlanoFabrico.Id, id_Produto = newPlanoFabrico.Id_Produto, operacoes = newPlanoFabrico.operacoes }, newPlanoFabrico);
         }
 
 
