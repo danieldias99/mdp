@@ -80,13 +80,14 @@ namespace MDP.Controllers
         [HttpPut]
         public async Task<IActionResult> PutProduto(ProdutoDTO update_produto)
         {
-            var produtoDTO = await repositorio.getProdutoById(update_produto.Id);
+            var produto = await repositorio.getProdutoById(update_produto.Id);
 
-            if (produtoDTO == null)
+            if (produto.Value == null)
             {
                 return NotFound();
             }
 
+            repositorio.updateProduto(update_produto);
 
             return NoContent();
         }

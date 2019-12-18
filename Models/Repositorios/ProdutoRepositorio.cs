@@ -61,10 +61,11 @@ namespace MDP.Models.Repositorios
             _context.SaveChanges();
         }
 
-        public async void updateProduto(Produto update_produto)
+        public async void updateProduto(ProdutoDTO update_produto)
         {
             var current_produto = await _context.Produtos.FindAsync(update_produto.Id);
-            current_produto.informacaoProduto = update_produto.informacaoProduto;
+            current_produto.informacaoProduto.nomeProduto = update_produto.nomeProduto;
+            current_produto.informacaoProduto.descricaoProduto = update_produto.descricaoProduto;
             _context.Entry(current_produto).State = EntityState.Modified;
             _context.SaveChanges();
         }
