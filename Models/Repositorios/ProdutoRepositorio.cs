@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
+using MDP.Models.Association;
 
 namespace MDP.Models.Repositorios
 {
@@ -21,10 +22,32 @@ namespace MDP.Models.Repositorios
             _context = context;
         }
 
-        public async Task<ActionResult<ProdutoDTO>> getProdutoById(long id)
+        public async Task<ActionResult<Produto>> getProdutoById(long id)
         {
             var Produto = await _context.Produtos.FindAsync(id);
-            return Produto.toDTO();
+            return Produto;
+        }
+
+        public async Task<ActionResult<PlanoFabrico>> getPlanoFabricoByProduto(long Id_planoFabrico, long Id_produto)
+        {
+            var planoFabrico = await _context.PlanosFabrico.FindAsync(Id_planoFabrico);
+            var ordensAll = await _context.OrdensFabrico.ToListAsync();
+            var ordens = setOrdensPProduto(ordensAll, Id_planoFabrico);
+            planoFabrico.Id_produto = Id_produto;
+            planoFabrico.operacoes = ordens;
+            return planoFabrico;
+        }
+
+        public List<OrdemFabrico> setOrdensPProduto(List<OrdemFabrico> ordensAll, long id_plano_producao)
+        {
+            var ordens = new List<OrdemFabrico>();
+
+            foreach (var ordem in ordensAll)
+            {
+                if (ordem.Id_planoFabrico == id_plano_producao)
+                    ordens.Add(ordem);
+            }
+            return ordens;
         }
 
         public async Task<ActionResult<List<Produto>>> getAllProdutos()

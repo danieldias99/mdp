@@ -1,4 +1,5 @@
-
+using MDP.Models.Association;
+using System.Collections.Generic;
 
 namespace MDP.Models.DTO
 {
@@ -7,15 +8,32 @@ namespace MDP.Models.DTO
     {
 
         public long Id { get; set; }
-        public OrdemFabrico [] operacoes {get; set;}
+        public long Id_produto { get; set; }
+        public ICollection<long> operacoes { get; set; }
 
-        public long Id_Produto {get;set;}
+        public PlanoFabricoDTO() { }
 
-        public PlanoFabricoDTO(long Id, long Id_produto, OrdemFabrico [] operacoes)
+        public PlanoFabricoDTO(long Id, long Id_produto, ICollection<long> operacoes)
         {
             this.Id = Id;
-            this.Id_Produto = Id_Produto;
-            this.operacoes = operacoes;  
+            this.Id_produto = Id_produto;
+            this.operacoes = operacoes;
+        }
+
+        public PlanoFabricoDTO(long Id, long Id_produto, ICollection<OrdemFabrico> operacoes)
+        {
+            this.Id = Id;
+            this.Id_produto = Id_produto;
+            setOperacoes(operacoes);
+        }
+
+        public void setOperacoes(ICollection<OrdemFabrico> list)
+        {
+            this.operacoes = new List<long>();
+            foreach (OrdemFabrico ordem in list)
+            {
+                this.operacoes.Add(ordem.Id_operacao);
+            }
         }
 
 
