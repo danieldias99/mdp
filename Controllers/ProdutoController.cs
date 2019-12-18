@@ -6,6 +6,7 @@ using MDP.Models.DTO;
 using MDP.Models.Repositorios;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Cors;
+using MDP.Controllers;
 
 namespace MDP.Controllers
 {
@@ -25,7 +26,18 @@ namespace MDP.Controllers
         [HttpGet("{id}")]
         public async Task<ActionResult<ProdutoDTO>> GetProduto(long id)
         {
-            var ProdutoDTO = await repositorio.getProdutoById(id);
+            var Produto = await repositorio.getProdutoById(id);
+
+            if (Produto.Value == null)
+            {
+                return NotFound();
+            }
+
+            var PlanoFabrico = await repositorio.getPlanoFabricoByProduto(Produto.Value.planoFabricoId, Produto.Value.Id);
+
+            Produto.Value.planoFabrico = PlanoFabrico.Value;
+
+            var ProdutoDTO = Produto.Value.toDTO();
 
             if (ProdutoDTO == null)
             {
@@ -38,7 +50,10 @@ namespace MDP.Controllers
         [HttpPost]
         public async Task<ActionResult<Produto>> PostProduto(ProdutoDTO newProduto)
         {
-            repositorio.addProduto(new Produto(newProduto.Id, newProduto.nomeProduto, newProduto.descricaoProduto));
+            repositorio.addProduto(new Produto(newProduto.Id, newProduto.nomeProduto, newProduto.descricaoProduto, newProduto.planofabrico.Id, newProduto.planofabrico.operacoes));
+
+            //plano_repositorio.addPlanoFabrico(new PlanoFabrico(newProduto.Id_planoFabrico, newProduto.Id, newProduto.operacoes));
+
             return CreatedAtAction(nameof(GetProduto), new { id = newProduto.Id }, newProduto);
         }
 
@@ -72,7 +87,7 @@ namespace MDP.Controllers
                 return NotFound();
             }
 
-            repositorio.updateProduto(new Produto(update_produto.Id, update_produto.nomeProduto, update_produto.descricaoProduto));
+
             return NoContent();
         }
 
