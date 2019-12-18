@@ -5,13 +5,17 @@
 - Produto
     - Id
     - InfoProduto
-    - É mostrado apenas o nome do cliente selecionado.
+    - planoFabrico
+    - Id_planoFabrico
 
 - Foi criada uma nova classe, OrdemFabrico, usada para criar uma lista de operações necessárias para a criação de um produto
 
     - Id_operaçao
+    - Id_planoFabrico
+    - planoFabrico
 
 - PlanoFabrico
 	- Id
-	- Id_produto
-	- OrdemFabrico [] operaçoes
+    - operacoes
+    - produto
+    - Id_produto
