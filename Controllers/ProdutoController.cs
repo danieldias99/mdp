@@ -61,16 +61,17 @@ namespace MDP.Controllers
         [HttpGet]
         public async Task<ActionResult<List<ProdutoDTO>>> GetAllProdutoDTO()
         {
-            List<ProdutoDTO> listaMaquinasDTO = obterListaProduto((await repositorio.getAllProdutos()).Value);
-            return listaMaquinasDTO;
+            var listaMaquinasDTO = await obterListaProduto((await repositorio.getAllProdutos()).Value);
+            return listaMaquinasDTO.Value;
         }
 
-        private List<ProdutoDTO> obterListaProduto(List<Produto> listaProdutoDTO)
+        private async Task<ActionResult<List<ProdutoDTO>>> obterListaProduto(List<Produto> listaProdutoDTO)
         {
             List<ProdutoDTO> listaProduto = new List<ProdutoDTO>();
             foreach (Produto Produto in listaProdutoDTO)
             {
-                //repositorio.setMaquinaProduto(Produto);
+                var planoFabrico = await repositorio.getPlanoFabricoByProduto(Produto.planoFabricoId, Produto.Id);
+                Produto.planoFabrico = planoFabrico.Value;
                 listaProduto.Add(Produto.toDTO());
             }
             return listaProduto;

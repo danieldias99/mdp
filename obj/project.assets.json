@@ -12075,23 +12075,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mata\\.nuget\\packages\\": {},
+    "C:\\Users\\Daniel\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mata\\Desktop\\Faculdade\\3Ano\\1º Semestre\\ARQSI\\Repositorio_AQRSI_MDP\\MDP.csproj",
+      "projectUniqueName": "C:\\Users\\Daniel\\Desktop\\Universidade\\3oAno\\1oSemestre\\ARQSI\\Projeto\\MDP\\MDP.csproj",
       "projectName": "MDP",
-      "projectPath": "C:\\Users\\Mata\\Desktop\\Faculdade\\3Ano\\1º Semestre\\ARQSI\\Repositorio_AQRSI_MDP\\MDP.csproj",
-      "packagesPath": "C:\\Users\\Mata\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mata\\Desktop\\Faculdade\\3Ano\\1º Semestre\\ARQSI\\Repositorio_AQRSI_MDP\\obj\\",
+      "projectPath": "C:\\Users\\Daniel\\Desktop\\Universidade\\3oAno\\1oSemestre\\ARQSI\\Projeto\\MDP\\MDP.csproj",
+      "packagesPath": "C:\\Users\\Daniel\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Daniel\\Desktop\\Universidade\\3oAno\\1oSemestre\\ARQSI\\Projeto\\MDP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mata\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Daniel\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
