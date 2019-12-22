@@ -21,11 +21,11 @@ namespace MDP.Models
             this.informacaoProduto = nomeProduto;
         }
 
-        public Produto(long id, string nomeProduto, string descricaoProduto, long id_plano_fabrico, ICollection<long> operacoes)
+        public Produto(long id, string nomeProduto, string descricaoProduto, long id_plano_fabrico, ICollection<long> operacoes, int tempo_producao)
         {
             this.Id = id;
             this.informacaoProduto = new InfoProduto(nomeProduto, descricaoProduto);
-            this.planoFabrico = new PlanoFabrico(id_plano_fabrico, this.Id, operacoes);
+            this.planoFabrico = new PlanoFabrico(id_plano_fabrico, this.Id, operacoes, tempo_producao);
         }
 
         public ProdutoDTO toDTO()

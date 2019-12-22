@@ -10,6 +10,7 @@ namespace MDP.Models.DTO
         public long Id { get; set; }
         public long Id_produto { get; set; }
         public ICollection<long> operacoes { get; set; }
+        public int tempo_producao { get; set; }
 
         public PlanoFabricoDTO() { }
 
@@ -20,10 +21,11 @@ namespace MDP.Models.DTO
             this.operacoes = operacoes;
         }
 
-        public PlanoFabricoDTO(long Id, long Id_produto, ICollection<OrdemFabrico> operacoes)
+        public PlanoFabricoDTO(long Id, long Id_produto, ICollection<OrdemFabrico> operacoes, int tempo_producao)
         {
             this.Id = Id;
             this.Id_produto = Id_produto;
+            this.tempo_producao = tempo_producao;
             setOperacoes(operacoes);
         }
 

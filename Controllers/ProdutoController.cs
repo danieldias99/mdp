@@ -6,7 +6,10 @@ using MDP.Models.DTO;
 using MDP.Models.Repositorios;
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Cors;
-using MDP.Controllers;
+using MDP.Models.Association;
+using System;
+using System.IO;
+using System.Net;
 
 namespace MDP.Controllers
 {
@@ -50,10 +53,7 @@ namespace MDP.Controllers
         [HttpPost]
         public async Task<ActionResult<Produto>> PostProduto(ProdutoDTO newProduto)
         {
-            repositorio.addProduto(new Produto(newProduto.Id, newProduto.nomeProduto, newProduto.descricaoProduto, newProduto.planofabrico.Id, newProduto.planofabrico.operacoes));
-
-            //plano_repositorio.addPlanoFabrico(new PlanoFabrico(newProduto.Id_planoFabrico, newProduto.Id, newProduto.operacoes));
-
+            repositorio.addProduto(new Produto(newProduto.Id, newProduto.nomeProduto, newProduto.descricaoProduto, newProduto.planofabrico.Id, newProduto.planofabrico.operacoes, newProduto.planofabrico.tempo_producao));
             return CreatedAtAction(nameof(GetProduto), new { id = newProduto.Id }, newProduto);
         }
 
