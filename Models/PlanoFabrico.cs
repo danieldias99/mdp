@@ -2,6 +2,7 @@ using MDP.Models.Shared;
 using MDP.Models.DTO;
 using MDP.Models.Association;
 using System.Collections.Generic;
+using MDP.Models;
 
 namespace MDP.Models
 {
@@ -12,7 +13,7 @@ namespace MDP.Models
         public Produto produto;
         public long Id_produto;
         public ICollection<OrdemFabrico> operacoes { get; set; }
-        public int tempo_producao { get; set; }
+        public TempoProducao tempo_fabrico { get; set; }
 
         public PlanoFabrico() { }
 
@@ -20,7 +21,7 @@ namespace MDP.Models
         {
             this.Id = id;
             this.Id_produto = id_produto;
-            this.tempo_producao = tempo_producao;
+            this.tempo_fabrico = new TempoProducao(tempo_producao);
             setOperacoes(operacoes);
         }
 
@@ -32,7 +33,7 @@ namespace MDP.Models
 
         public PlanoFabricoDTO toDTO()
         {
-            return new PlanoFabricoDTO(Id, Id_produto, operacoes, tempo_producao);
+            return new PlanoFabricoDTO(Id, Id_produto, operacoes, tempo_fabrico.tempo_fabrico);
         }
 
         public void setOperacoes(ICollection<long> list)

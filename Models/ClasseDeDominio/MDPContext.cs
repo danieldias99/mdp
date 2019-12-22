@@ -28,8 +28,9 @@ namespace MDP.Models.ClassesDeDominio
             modelBuilder.Entity<PlanoFabrico>().Property(a => a.Id).ValueGeneratedNever();
 
             modelBuilder.Entity<PlanoFabrico>().HasMany<OrdemFabrico>(a => a.operacoes);
+            modelBuilder.Entity<PlanoFabrico>().OwnsOne<TempoProducao>(a => a.tempo_fabrico);
 
-            //orde de fabrico
+            //ordem de fabrico
             modelBuilder.Entity<OrdemFabrico>().HasKey(b => new { b.Id_operacao, b.Id_planoFabrico });
 
 

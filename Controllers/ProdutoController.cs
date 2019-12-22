@@ -53,7 +53,7 @@ namespace MDP.Controllers
         [HttpPost]
         public async Task<ActionResult<Produto>> PostProduto(ProdutoDTO newProduto)
         {
-            repositorio.addProduto(new Produto(newProduto.Id, newProduto.nomeProduto, newProduto.descricaoProduto, newProduto.planofabrico.Id, newProduto.planofabrico.operacoes, newProduto.planofabrico.tempo_producao));
+            repositorio.addProduto(new Produto(newProduto.Id, newProduto.nomeProduto, newProduto.descricaoProduto, newProduto.planofabrico.Id, newProduto.planofabrico.operacoes, newProduto.planofabrico.tempo_fabrico));
             return CreatedAtAction(nameof(GetProduto), new { id = newProduto.Id }, newProduto);
         }
 
